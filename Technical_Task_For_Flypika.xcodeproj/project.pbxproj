@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499FE2A52685EE4C0058DFD1 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499FE2A42685EE4C0058DFD1 /* TabBar.storyboard */; };
+		499FE2A72685EEE10058DFD1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2A62685EEE10058DFD1 /* TabBarViewController.swift */; };
+		499FE2AA2685EFC20058DFD1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2A92685EFC20058DFD1 /* ProfileViewController.swift */; };
+		499FE2AC2685EFE90058DFD1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2AB2685EFE90058DFD1 /* ProfileTableViewCell.swift */; };
 		49EB52532685E9EF0043639A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB52522685E9EF0043639A /* AppDelegate.swift */; };
 		49EB52552685E9EF0043639A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB52542685E9EF0043639A /* SceneDelegate.swift */; };
 		49EB52572685E9EF0043639A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB52562685E9EF0043639A /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		499FE2A42685EE4C0058DFD1 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		499FE2A62685EEE10058DFD1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		499FE2A92685EFC20058DFD1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		499FE2AB2685EFE90058DFD1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		49EB524F2685E9EF0043639A /* Technical_Task_For_Flypika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Technical_Task_For_Flypika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EB52522685E9EF0043639A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49EB52542685E9EF0043639A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		499FE2A32685EE260058DFD1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				499FE2A82685EF9D0058DFD1 /* profile */,
+				499FE2A62685EEE10058DFD1 /* TabBarViewController.swift */,
+				499FE2A42685EE4C0058DFD1 /* TabBar.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		499FE2A82685EF9D0058DFD1 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				499FE2A92685EFC20058DFD1 /* ProfileViewController.swift */,
+				499FE2AB2685EFE90058DFD1 /* ProfileTableViewCell.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
 		49EB52462685E9EF0043639A = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +85,7 @@
 			children = (
 				49EB52672685EA0E0043639A /* Application */,
 				49EB52662685E9FC0043639A /* Main */,
+				499FE2A32685EE260058DFD1 /* TabBar */,
 				49EB525B2685E9F10043639A /* Assets.xcassets */,
 				49EB525D2685E9F10043639A /* LaunchScreen.storyboard */,
 				49EB52602685E9F10043639A /* Info.plist */,
@@ -140,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499FE2A52685EE4C0058DFD1 /* TabBar.storyboard in Resources */,
 				49EB525F2685E9F10043639A /* LaunchScreen.storyboard in Resources */,
 				49EB525C2685E9F10043639A /* Assets.xcassets in Resources */,
 				49EB525A2685E9EF0043639A /* Main.storyboard in Resources */,
@@ -153,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499FE2A72685EEE10058DFD1 /* TabBarViewController.swift in Sources */,
 				49EB52572685E9EF0043639A /* ViewController.swift in Sources */,
+				499FE2AA2685EFC20058DFD1 /* ProfileViewController.swift in Sources */,
+				499FE2AC2685EFE90058DFD1 /* ProfileTableViewCell.swift in Sources */,
 				49EB52532685E9EF0043639A /* AppDelegate.swift in Sources */,
 				49EB52552685E9EF0043639A /* SceneDelegate.swift in Sources */,
 			);
