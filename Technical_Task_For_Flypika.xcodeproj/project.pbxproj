@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497D204226878C1A00A6AC09 /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E816526878713001376A1 /* VKSdkFramework.framework */; };
+		497D204326878C1A00A6AC09 /* VKSdkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 494E816526878713001376A1 /* VKSdkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		499FE2A52685EE4C0058DFD1 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499FE2A42685EE4C0058DFD1 /* TabBar.storyboard */; };
 		499FE2A72685EEE10058DFD1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2A62685EEE10058DFD1 /* TabBarViewController.swift */; };
 		499FE2AA2685EFC20058DFD1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2A92685EFC20058DFD1 /* ProfileViewController.swift */; };
@@ -19,7 +21,56 @@
 		49EB525F2685E9F10043639A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EB525D2685E9F10043639A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		494E816026878713001376A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3C7542D182133CC00964716;
+			remoteInfo = VKSdk;
+		};
+		494E816226878713001376A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3BACC401865905B003158DA;
+			remoteInfo = VKSdkResources;
+		};
+		494E816426878713001376A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F34670311B8B7C5A003EF74B;
+			remoteInfo = VKSdkFramework;
+		};
+		494E816626878713001376A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3C58CCD1D213B2C005E94B5;
+			remoteInfo = VKSdkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		497D204426878C1A00A6AC09 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				497D204326878C1A00A6AC09 /* VKSdkFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		494E81552687847A001376A1 /* VKSdkFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VKSdkFramework.h; path = "Carthage/Checkouts/vk-ios-sdk/library/DynamicFramework/VKSdkFramework.h"; sourceTree = "<group>"; };
+		494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "VK-ios-sdk.xcodeproj"; path = "Carthage/Checkouts/vk-ios-sdk/VK-ios-sdk.xcodeproj"; sourceTree = "<group>"; };
+		4975B279268780CE005DB924 /* VKSdkFramework */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = VKSdkFramework; path = Carthage/Build/iOS/VKSdkFramework.framework/VKSdkFramework; sourceTree = "<group>"; };
+		498773972687830600A1726F /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
 		499FE2A42685EE4C0058DFD1 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		499FE2A62685EEE10058DFD1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		499FE2A92685EFC20058DFD1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -39,12 +90,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497D204226878C1A00A6AC09 /* VKSdkFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		494E815A26878713001376A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494E816126878713001376A1 /* libVKSdk.a */,
+				494E816326878713001376A1 /* VKSdkResources.bundle */,
+				494E816526878713001376A1 /* VKSdkFramework.framework */,
+				494E816726878713001376A1 /* VKSdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4975B278268780CE005DB924 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */,
+				494E81552687847A001376A1 /* VKSdkFramework.h */,
+				498773972687830600A1726F /* VKSdkFramework.framework */,
+				4975B279268780CE005DB924 /* VKSdkFramework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		499FE2A32685EE260058DFD1 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +143,7 @@
 			children = (
 				49EB52512685E9EF0043639A /* Technical_Task_For_Flypika */,
 				49EB52502685E9EF0043639A /* Products */,
+				4975B278268780CE005DB924 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +196,8 @@
 				49EB524B2685E9EF0043639A /* Sources */,
 				49EB524C2685E9EF0043639A /* Frameworks */,
 				49EB524D2685E9EF0043639A /* Resources */,
+				4975B27726877C8F005DB924 /* ShellScript */,
+				497D204426878C1A00A6AC09 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,12 +233,49 @@
 			mainGroup = 49EB52462685E9EF0043639A;
 			productRefGroup = 49EB52502685E9EF0043639A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 494E815A26878713001376A1 /* Products */;
+					ProjectRef = 494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				49EB524E2685E9EF0043639A /* Technical_Task_For_Flypika */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		494E816126878713001376A1 /* libVKSdk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVKSdk.a;
+			remoteRef = 494E816026878713001376A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		494E816326878713001376A1 /* VKSdkResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VKSdkResources.bundle;
+			remoteRef = 494E816226878713001376A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		494E816526878713001376A1 /* VKSdkFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VKSdkFramework.framework;
+			remoteRef = 494E816426878713001376A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		494E816726878713001376A1 /* VKSdkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VKSdkTests.xctest;
+			remoteRef = 494E816626878713001376A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		49EB524D2685E9EF0043639A /* Resources */ = {
@@ -176,6 +290,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4975B27726877C8F005DB924 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings 2>/dev/null\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49EB524B2685E9EF0043639A /* Sources */ = {
@@ -336,10 +470,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D59855NLU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Technical_Task_For_Flypika/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/VKSdkFramework.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BGP.Technical-Task-For-Flypika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,10 +497,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D59855NLU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Technical_Task_For_Flypika/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/VKSdkFramework.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BGP.Technical-Task-For-Flypika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
