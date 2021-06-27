@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,20 +12,24 @@
         <!--Auth View Controller-->
         <scene sceneID="bB7-pY-2zH">
             <objects>
-                <viewController id="Etq-h6-DRY" customClass="AuthViewController" customModule="VKAuth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Etq-h6-DRY" customClass="AuthViewController" customModule="Technical_Task_For_Flypika" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CPe-jW-4za">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-67-1jf">
+                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-67-1jf">
                                 <rect key="frame" x="97" y="418" width="221" height="61"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES" selected="YES" staticText="YES"/>
                                 </accessibility>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title=" ВКОНТАКТЕ" image="ic_vk_activity_logo">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title=" ВКОНТАКТЕ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="ic_vk_activity_logo" renderingMode="original"/>
                                 </state>
+                                <state key="disabled" image="ic_vk_activity_logo"/>
+                                <state key="selected" image="ic_vk_activity_logo"/>
+                                <state key="highlighted" image="ic_vk_activity_logo"/>
                                 <connections>
                                     <action selector="signInTouch:" destination="Etq-h6-DRY" eventType="touchUpInside" id="OWf-n0-Zmc"/>
                                 </connections>
@@ -33,10 +38,13 @@
                         <viewLayoutGuide key="safeArea" id="FSg-Oh-K8e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UQd-67-1jf" firstAttribute="centerX" secondItem="CPe-jW-4za" secondAttribute="centerX" id="bWI-7b-GpV"/>
-                            <constraint firstItem="UQd-67-1jf" firstAttribute="centerY" secondItem="CPe-jW-4za" secondAttribute="centerY" id="wNF-Y3-4KM"/>
+                            <constraint firstItem="UQd-67-1jf" firstAttribute="centerY" secondItem="FSg-Oh-K8e" secondAttribute="centerY" id="TfT-hR-2FK"/>
+                            <constraint firstItem="UQd-67-1jf" firstAttribute="centerX" secondItem="FSg-Oh-K8e" secondAttribute="centerX" id="b8y-j5-Ajy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="vkEnter" destination="UQd-67-1jf" id="GND-dJ-eQp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lcd-Uo-pg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
