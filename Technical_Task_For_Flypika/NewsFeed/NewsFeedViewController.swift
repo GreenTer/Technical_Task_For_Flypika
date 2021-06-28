@@ -46,7 +46,12 @@ class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
   }
   
   func displayData(viewModel: NewsFeed.Model.ViewModel.ViewModelData) {
-
+    switch viewModel {
+    case .some:
+        print(".some ViewController")
+    case .displayNewsFeed:
+        print(".displayNewsfeed ViewController")
+    }
   }
   
 }
@@ -64,4 +69,10 @@ extension NewsFeedViewController: UITableViewDelegate, UITableViewDataSource {
                 
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("select row")
+        interactor?.makeRequest(request: .getFeed)
+    }
+
 }

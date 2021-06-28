@@ -12,9 +12,5 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() { 
         super.viewDidLoad()
-
-        // скрыть кнопку Back
-//        self.navigationItem.hidesBackButton = true
-     
     }
 }
