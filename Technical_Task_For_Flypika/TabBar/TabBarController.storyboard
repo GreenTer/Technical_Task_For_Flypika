@@ -26,21 +26,40 @@
             </objects>
             <point key="canvasLocation" x="-1177" y="-491"/>
         </scene>
-        <!--View Controller-->
+        <!--News Feed View Controller-->
         <scene sceneID="APh-Eo-5hS">
             <objects>
-                <viewController id="7SH-M8-Ygj" sceneMemberID="viewController">
+                <viewController id="7SH-M8-Ygj" customClass="NewsFeedViewController" customModule="Technical_Task_For_Flypika" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vkG-wx-qaH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zfr-JW-UEi">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7SH-M8-Ygj" id="3G8-SR-155"/>
+                                    <outlet property="delegate" destination="7SH-M8-Ygj" id="dnr-uI-WLf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KMP-VY-b3Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zfr-JW-UEi" firstAttribute="trailing" secondItem="KMP-VY-b3Q" secondAttribute="trailing" id="Ll4-xi-abM"/>
+                            <constraint firstItem="Zfr-JW-UEi" firstAttribute="top" secondItem="KMP-VY-b3Q" secondAttribute="top" id="iif-a9-GbK"/>
+                            <constraint firstItem="Zfr-JW-UEi" firstAttribute="bottom" secondItem="KMP-VY-b3Q" secondAttribute="bottom" id="ndG-2d-l89"/>
+                            <constraint firstItem="Zfr-JW-UEi" firstAttribute="leading" secondItem="KMP-VY-b3Q" secondAttribute="leading" id="vLo-Un-wKl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="News" id="W7n-v6-xlc"/>
+                    <connections>
+                        <outlet property="table" destination="Zfr-JW-UEi" id="T18-2A-lPK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4Q-Fs-EhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2043" y="250"/>
+            <point key="canvasLocation" x="-2043.0769230769231" y="249.52606635071089"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="JmJ-wa-x9j">
@@ -116,9 +135,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="News" width="30" height="30"/>
+        <image name="News" width="20" height="20"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="profile" width="36.5" height="30"/>
+        <image name="profile" width="24.333333969116211" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

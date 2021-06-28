@@ -42,9 +42,6 @@
                             <constraint firstItem="UQd-67-1jf" firstAttribute="centerX" secondItem="FSg-Oh-K8e" secondAttribute="centerX" id="b8y-j5-Ajy"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="vkEnter" destination="UQd-67-1jf" id="GND-dJ-eQp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lcd-Uo-pg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
