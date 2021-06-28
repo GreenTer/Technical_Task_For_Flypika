@@ -13,6 +13,8 @@
 		490FD95F2688C4A10098E6DB /* NewsFeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490FD9582688C4A10098E6DB /* NewsFeedModels.swift */; };
 		490FD9602688C4A10098E6DB /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490FD9592688C4A10098E6DB /* NewsFeedViewController.swift */; };
 		490FD9612688C4A10098E6DB /* NewsFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490FD95A2688C4A10098E6DB /* NewsFeedInteractor.swift */; };
+		494342B6268A3F410056E9B9 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494342B5268A3F410056E9B9 /* NewsFeedCell.swift */; };
+		494342B8268A40190056E9B9 /* NewsFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494342B7268A40190056E9B9 /* NewsFeedCell.xib */; };
 		497D204226878C1A00A6AC09 /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E816526878713001376A1 /* VKSdkFramework.framework */; };
 		497D204326878C1A00A6AC09 /* VKSdkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 494E816526878713001376A1 /* VKSdkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49832C392689070200E71BE3 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49832C382689070200E71BE3 /* AuthViewController.storyboard */; };
@@ -80,6 +82,8 @@
 		490FD9582688C4A10098E6DB /* NewsFeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedModels.swift; sourceTree = "<group>"; };
 		490FD9592688C4A10098E6DB /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		490FD95A2688C4A10098E6DB /* NewsFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedInteractor.swift; sourceTree = "<group>"; };
+		494342B5268A3F410056E9B9 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
+		494342B7268A40190056E9B9 /* NewsFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFeedCell.xib; sourceTree = "<group>"; };
 		494E81552687847A001376A1 /* VKSdkFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VKSdkFramework.h; path = "Carthage/Checkouts/vk-ios-sdk/library/DynamicFramework/VKSdkFramework.h"; sourceTree = "<group>"; };
 		494E815926878713001376A1 /* VK-ios-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "VK-ios-sdk.xcodeproj"; path = "Carthage/Checkouts/vk-ios-sdk/VK-ios-sdk.xcodeproj"; sourceTree = "<group>"; };
 		4975B279268780CE005DB924 /* VKSdkFramework */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = VKSdkFramework; path = Carthage/Build/iOS/VKSdkFramework.framework/VKSdkFramework; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		490FD9502688C4280098E6DB /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				494342B0268A3F250056E9B9 /* NewsFeedCell */,
 				490FD9592688C4A10098E6DB /* NewsFeedViewController.swift */,
 				490FD95A2688C4A10098E6DB /* NewsFeedInteractor.swift */,
 				490FD9552688C4A10098E6DB /* NewsFeedPresenter.swift */,
@@ -122,6 +127,15 @@
 				490FD9572688C4A10098E6DB /* NewsFeedRouter.swift */,
 			);
 			path = NewsFeed;
+			sourceTree = "<group>";
+		};
+		494342B0268A3F250056E9B9 /* NewsFeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				494342B5268A3F410056E9B9 /* NewsFeedCell.swift */,
+				494342B7268A40190056E9B9 /* NewsFeedCell.xib */,
+			);
+			path = NewsFeedCell;
 			sourceTree = "<group>";
 		};
 		494E815A26878713001376A1 /* Products */ = {
@@ -312,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				499FE2A52685EE4C0058DFD1 /* TabBarController.storyboard in Resources */,
+				494342B8268A40190056E9B9 /* NewsFeedCell.xib in Resources */,
 				49832C392689070200E71BE3 /* AuthViewController.storyboard in Resources */,
 				49EB525F2685E9F10043639A /* LaunchScreen.storyboard in Resources */,
 				49EB525C2685E9F10043639A /* Assets.xcassets in Resources */,
@@ -349,6 +364,7 @@
 				490FD95E2688C4A10098E6DB /* NewsFeedRouter.swift in Sources */,
 				499FE2A72685EEE10058DFD1 /* TabBarController.swift in Sources */,
 				499FE2AA2685EFC20058DFD1 /* ProfileViewController.swift in Sources */,
+				494342B6268A3F410056E9B9 /* NewsFeedCell.swift in Sources */,
 				499FE2AC2685EFE90058DFD1 /* ProfileTableViewCell.swift in Sources */,
 				490FD9612688C4A10098E6DB /* NewsFeedInteractor.swift in Sources */,
 				490FD95C2688C4A10098E6DB /* NewsFeedPresenter.swift in Sources */,
