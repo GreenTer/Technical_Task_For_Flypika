@@ -123,14 +123,14 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="commentsLabel" destination="Mje-ZU-RY7" id="38J-Xb-ddP"/>
+                <outlet property="commentsLabel" destination="bJ2-EF-z0s" id="7x9-GM-3Lb"/>
                 <outlet property="dateLabel" destination="pke-Bz-8ES" id="Exl-yR-gCU"/>
                 <outlet property="iconImageView" destination="cW2-LS-vg8" id="oVD-tJ-Nwd"/>
-                <outlet property="likesLabel" destination="yKH-Qi-gLE" id="hbQ-yX-THa"/>
+                <outlet property="likesLabel" destination="eXL-c2-PG6" id="H9T-Lz-q2l"/>
                 <outlet property="nameLabel" destination="2TY-Fw-Dzq" id="8ib-Sp-1oJ"/>
                 <outlet property="postLabel" destination="wse-1U-Qym" id="7ND-ct-93q"/>
-                <outlet property="sharesLabel" destination="vym-qh-MQd" id="dJE-un-dk2"/>
-                <outlet property="viewsLabel" destination="o1V-fr-Phl" id="VFa-I4-HAQ"/>
+                <outlet property="sharesLabel" destination="i9t-ee-gBC" id="UYY-At-uYP"/>
+                <outlet property="viewsLabel" destination="SiX-xJ-zyW" id="QJt-FE-z3W"/>
             </connections>
             <point key="canvasLocation" x="247.82608695652175" y="57.924107142857139"/>
         </tableViewCell>

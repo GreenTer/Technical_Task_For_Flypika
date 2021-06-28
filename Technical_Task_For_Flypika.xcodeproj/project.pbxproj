@@ -201,8 +201,8 @@
 			children = (
 				49EB52672685EA0E0043639A /* Application */,
 				49EB52662685E9FC0043639A /* Auth */,
-				490FD9502688C4280098E6DB /* NewsFeed */,
 				499FE2A32685EE260058DFD1 /* TabBar */,
+				490FD9502688C4280098E6DB /* NewsFeed */,
 				49EB525B2685E9F10043639A /* Assets.xcassets */,
 				49EB525D2685E9F10043639A /* LaunchScreen.storyboard */,
 				49EB52602685E9F10043639A /* Info.plist */,
