@@ -13,8 +13,9 @@ enum NewsFeed {
   enum Model {
     struct Request {
       enum RequestType {
-        case some
-        case getFeed
+//        case some
+//        case getFeed
+        case getNewsFeed
       }
     }
     struct Response {

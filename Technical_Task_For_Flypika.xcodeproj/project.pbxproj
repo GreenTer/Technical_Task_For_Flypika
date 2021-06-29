@@ -23,6 +23,10 @@
 		499FE2A72685EEE10058DFD1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2A62685EEE10058DFD1 /* TabBarController.swift */; };
 		499FE2AA2685EFC20058DFD1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2A92685EFC20058DFD1 /* ProfileViewController.swift */; };
 		499FE2AC2685EFE90058DFD1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FE2AB2685EFE90058DFD1 /* ProfileTableViewCell.swift */; };
+		49CA9ADE268B4E8F006917D9 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA9ADD268B4E8F006917D9 /* FeedResponse.swift */; };
+		49CA9AE0268B4EDC006917D9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA9ADF268B4EDC006917D9 /* NetworkService.swift */; };
+		49CA9AE2268B4F08006917D9 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA9AE1268B4F08006917D9 /* NetworkDataFetcher.swift */; };
+		49CA9AE4268B4F1C006917D9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA9AE3268B4F1C006917D9 /* API.swift */; };
 		49EB52532685E9EF0043639A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB52522685E9EF0043639A /* AppDelegate.swift */; };
 		49EB52552685E9EF0043639A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EB52542685E9EF0043639A /* SceneDelegate.swift */; };
 		49EB525C2685E9F10043639A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EB525B2685E9F10043639A /* Assets.xcassets */; };
@@ -94,6 +98,10 @@
 		499FE2A62685EEE10058DFD1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		499FE2A92685EFC20058DFD1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		499FE2AB2685EFE90058DFD1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		49CA9ADD268B4E8F006917D9 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		49CA9ADF268B4EDC006917D9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		49CA9AE1268B4F08006917D9 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		49CA9AE3268B4F1C006917D9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		49EB524F2685E9EF0043639A /* Technical_Task_For_Flypika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Technical_Task_For_Flypika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EB52522685E9EF0043639A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49EB52542685E9EF0043639A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +187,14 @@
 			path = profile;
 			sourceTree = "<group>";
 		};
+		49CA9AD8268B4E72006917D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49CA9ADD268B4E8F006917D9 /* FeedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		49EB52462685E9EF0043639A = {
 			isa = PBXGroup;
 			children = (
@@ -222,9 +238,13 @@
 		49EB52672685EA0E0043639A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				49CA9AD8268B4E72006917D9 /* Models */,
 				49EB52522685E9EF0043639A /* AppDelegate.swift */,
 				49EB52542685E9EF0043639A /* SceneDelegate.swift */,
 				49EDAA752687C69F00C9AA43 /* AuthService.swift */,
+				49CA9ADF268B4EDC006917D9 /* NetworkService.swift */,
+				49CA9AE1268B4F08006917D9 /* NetworkDataFetcher.swift */,
+				49CA9AE3268B4F1C006917D9 /* API.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -361,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				490FD95F2688C4A10098E6DB /* NewsFeedModels.swift in Sources */,
+				49CA9ADE268B4E8F006917D9 /* FeedResponse.swift in Sources */,
 				490FD95E2688C4A10098E6DB /* NewsFeedRouter.swift in Sources */,
 				499FE2A72685EEE10058DFD1 /* TabBarController.swift in Sources */,
 				499FE2AA2685EFC20058DFD1 /* ProfileViewController.swift in Sources */,
@@ -368,11 +389,14 @@
 				499FE2AC2685EFE90058DFD1 /* ProfileTableViewCell.swift in Sources */,
 				490FD9612688C4A10098E6DB /* NewsFeedInteractor.swift in Sources */,
 				490FD95C2688C4A10098E6DB /* NewsFeedPresenter.swift in Sources */,
+				49CA9AE2268B4F08006917D9 /* NetworkDataFetcher.swift in Sources */,
 				490FD95D2688C4A10098E6DB /* NewsFeedWorker.swift in Sources */,
+				49CA9AE0268B4EDC006917D9 /* NetworkService.swift in Sources */,
 				49EB52532685E9EF0043639A /* AppDelegate.swift in Sources */,
 				498BFC672687D04600AF1D98 /* AuthViewController.swift in Sources */,
 				49EB52552685E9EF0043639A /* SceneDelegate.swift in Sources */,
 				49EDAA762687C69F00C9AA43 /* AuthService.swift in Sources */,
+				49CA9AE4268B4F1C006917D9 /* API.swift in Sources */,
 				490FD9602688C4A10098E6DB /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
