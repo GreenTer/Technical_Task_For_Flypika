@@ -51,15 +51,14 @@ class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
   
   func displayData(viewModel: NewsFeed.Model.ViewModel.ViewModelData) {
     switch viewModel {
-    case .some:
-        print(".some ViewController")
-    case .displayNewsFeed:
-        print(".displayNewsfeed ViewController")
+    
+    // next step!
+    case .displayNewsFeed(feedViewModel: let feedViewModel):
+        print("//")
     }
-  }
   
+  }
 }
-
 
 extension NewsFeedViewController: UITableViewDelegate, UITableViewDataSource {
 
@@ -73,12 +72,6 @@ extension NewsFeedViewController: UITableViewDelegate, UITableViewDataSource {
         cell.set(viewModel: cellViewModel)
         return cell
     }
-    
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("select row")
-//        interactor?.makeRequest(request: .getFeed)
-//    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200

@@ -13,25 +13,24 @@ enum NewsFeed {
   enum Model {
     struct Request {
       enum RequestType {
-//        case some
-//        case getFeed
         case getNewsFeed
       }
     }
+    
     struct Response {
       enum ResponseType {
-        case some
-        case responsePresentNewsFeed
+        case responsePresentNewsFeed(feed: FeedResponse)
       }
     }
+    
     struct ViewModel {
       enum ViewModelData {
-        case some
-        case displayNewsFeed
+        case displayNewsFeed(feedViewModel: FeedViewModel)
       }
     }
   }
 }
+
 
 struct FeedViewModel {
     struct Cell: FeedCellViewModel {
